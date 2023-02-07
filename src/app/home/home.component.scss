@@ -1,0 +1,15 @@
+.home-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 3.5em);
+    .card-container {
+        width: 25%;
+        min-width: 300px;
+        gap: 40px;
+    }
+    .title {
+        align-self: center;
+    }
+}

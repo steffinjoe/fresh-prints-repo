@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NAV_ITEMS } from 'src/constants/navitems.constants';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fresh-prints-repo';
+  navItems = NAV_ITEMS
 }

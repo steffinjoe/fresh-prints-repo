@@ -1,0 +1,21 @@
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #FFF;
+
+    .small-title {
+        color: var(--secondaryText);
+    }
+
+    .user-image {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .image-element {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

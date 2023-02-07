@@ -1,0 +1,44 @@
+.history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 3.5em);
+    .card-container {
+        width: 40%;
+        min-width: 300px;
+        gap: 40px;
+    }
+    .results-table {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border: 1px solid var(--border);
+        height: 60vh;
+        overflow: scroll;
+        .table-header, .table-body {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .table-header {
+            border-bottom: 1px solid var(--border);
+        }
+        .table-body {
+            .user-card {
+                border: none!important;
+            }
+        }
+        .empty-response {
+            align-self: center;
+            padding: 40px;
+        }
+    }
+    .title {
+        align-self: center;
+    }
+    .primary-btn {
+        padding: 10px;
+        margin-top: 40px;
+    }
+}

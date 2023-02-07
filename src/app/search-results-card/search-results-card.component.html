@@ -1,0 +1,15 @@
+<div *ngIf="user" class="user-card">
+    <ng-container *ngIf="!user.isNoResults">
+        <div class="user-image">
+            <div class="small-title">User Image</div>
+            <img [src]="user.avatar_url" class="image-element"/>
+        </div>
+        <div class="user-name">
+            <div class="small-title">Github User Name</div>
+            <div class="name-text">{{user.name}}</div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="user.isNoResults">
+        <div class="small-title">Search result not found</div>
+    </ng-container>
+</div>

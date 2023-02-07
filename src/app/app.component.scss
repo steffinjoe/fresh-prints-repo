@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    padding: 0px 10%;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px #EEE;
+    height: 3.5em;
+
+    .nav-item {
+        padding: 20px;
+        color: #000;
+        text-decoration: none;
+
+        &.active-nav {
+            border-bottom: 2px solid var(--highlight);
+        }
+    }
+}

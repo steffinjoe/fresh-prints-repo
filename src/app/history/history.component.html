@@ -1,0 +1,19 @@
+<div class="history-container">
+    <div class="card-container">
+        <div class="title">Your Search History</div>
+        <div *ngIf="users.length" class="results-table">
+            <div class="table-header">
+                <div class="header-title">Search Term</div>
+                <div class="header-title">Search Results</div>
+            </div>
+            <div *ngFor="let user of users" class="table-body">
+                <div class="title">{{user.input}}</div>
+                <app-search-results-card [user]="user"></app-search-results-card>
+            </div>
+        </div>
+        <div *ngIf="users.length === 0" class="results-table">
+            <div class="empty-response">No Search History</div>
+        </div>
+    </div>
+    <button (click)="clearHistory()" class="primary-btn search-btn">Clear Search History</button>
+</div>
